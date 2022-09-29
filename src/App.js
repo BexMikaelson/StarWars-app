@@ -1,8 +1,9 @@
 // Imported react
 import Container from 'react-bootstrap/Container'
 import { Routes, Route } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+
 
 // Imported components
 import Menu from './components/Menu'
@@ -24,7 +25,7 @@ const App = () => {
 			<Container className="py-3">
 				<Routes>
 					<Route exact path="/" element={<Home />} />
-					<Route path="/people/" element={<PeoplePage />} />
+					<Route path="/people" element={<PeoplePage />} />
 					<Route path="/people/:id" element={<People />} />
 					<Route path="/films" element={<FilmPage />} />
 					<Route path="/films/:id" element={<Film />} />
