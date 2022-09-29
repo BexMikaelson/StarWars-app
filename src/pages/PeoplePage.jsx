@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import ListGroup from "react-bootstrap/ListGroup"
 import Button from 'react-bootstrap/Button'
-import Pagination from "../components/Pagination"
+
 // Imported Loading Spinner
 import LoadingSpinner from '../components/LoadingSpinner'
 
@@ -52,25 +52,25 @@ const PeoplesPage = () => {
                     {people.results?.map((people, index) => (
                         <ListGroup.Item 
                             key={index} 
-                            className="card border-1 rounded m-3 p-0 col-lg-3 col-md-5 col-sm-12"
+                            className="card border-1 rounded m-3 div-0 col-lg-3 col-md-5 col-sm-12"
                         >
                             <div className="card-header p-3">
-                                <strong>{people.name}</strong>
+                                <h4>{people.name}</h4>
                             </div>
 
                             <div className="card-body">
-                                <p className="card-header bg-white">
-                                    <strong>Gender: </strong>
+                                <div className="card-header bg-white">
+                                    <h6>Gender: </h6>
                                     {people.gender}
-                                </p>
-                                <p className="card-header bg-white">
-                                    <strong>Born: </strong>
+                                </div>
+                                <div className="card-header bg-white">
+                                    <h6>Born: </h6>
                                     {people.birth_year}
-                                </p>
-                                <p className="card-header bg-white mb-3">
-                                    <strong>In </strong>
+                                </div>
+                                <div className="card-header bg-white mb-3">
+                                    <h6>In </h6>
                                     {people.films.length} films
-                                </p>
+                                </div>
                                 
                                 <Link 
                                     type="button" 

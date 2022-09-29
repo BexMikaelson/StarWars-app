@@ -4,7 +4,6 @@ import SWAPI from "../API/SWAPI"
 // Imported react + bootstrap
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import ListGroup from "react-bootstrap/ListGroup"
 import Container from "react-bootstrap/esm/Container"
 import Button from 'react-bootstrap/Button'
 // Imported Loading Spinner
@@ -49,7 +48,7 @@ const FilmsPage = () => {
 							className="card d-flex justify-content-center  m-3 p-0 col-lg-3 col-md-5 col-sm-12"
 						>
 							<div>
-								<h5>{film.title}</h5>
+								<h4>{film.title}</h4>
 							</div>
 
 							<div className="card-body ">

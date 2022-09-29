@@ -10,6 +10,7 @@ import ListGroup from "react-bootstrap/ListGroup"
 // loading
 import LoadingSpinner from '../components/LoadingSpinner'
 
+
 const Film = () => {
     const [film, setFilm] = useState()
     const [loading, setLoading] = useState(false)
@@ -41,42 +42,42 @@ const Film = () => {
 
     return (
         <>
-            <ListGroup className="card border-1 rounded  mb-5 p-0">
+            <ListGroup className="card mb-5 p-0">
                 <div className="card-header p-3">
                     <h4 className="m-0">{film.title}</h4>
                 </div>
 
                 <div className="card-body">
-                    <h5>Attributes</h5>
+                    
 
-                    <p>
-                        <strong>Episode: </strong>
-                        {film.episode_id}
-                    </p>
+                    <div>
+                        <h5>Episode: </h5>
+                        <p>{film.episode_id}</p>
+                    </div>
 
-                    <p>
-                        <strong>Director: </strong>
-                        {film.director}
-                    </p>
+                    <div>
+                        <h5>Director: </h5>
+                        <p>{film.director}</p>
+                    </div>
 
-                    <p>
-                        <strong>Producer: </strong>
-                        {film.producer}
-                    </p>
+                    <div>
+                        <h5>Producer: </h5>
+                        <p>{film.producer}</p>
+                    </div>
 
-                    <p>
-                        <strong>Release date:</strong>
-                        {film.release_date}
-                    </p>
+                    <div>
+                        <h5>Release date:</h5>
+                        <p>{film.release_date}</p>
+                    </div>
 
                     <br />
 
                     <ListGroup>
                         
                         <h4>The Characters</h4>
-
+                        
                         {film.characters.length > 0 && (
-                            film.characters.map((character, index) =>
+                            film.characters.map((character, index) => 
                                 <Link
                                     key={index} 
                                     to={`/people/${getSwapiIdFromUrl(character)}`} 
