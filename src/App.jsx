@@ -14,6 +14,7 @@ import PeoplePage from './pages/PeoplePage'
 import People from './pages/People'
 import FilmPage from './pages/FilmPage'
 import Film from './pages/Film'
+import NotFound from './pages/NotFound'
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
 					<Route path="/people/:id" element={<People />} />
 					<Route path="/films" element={<FilmPage />} />
 					<Route path="/films/:id" element={<Film />} />
+					<Route path="*" element={<NotFound />} />
 					
 				</Routes>
 			</Container>
