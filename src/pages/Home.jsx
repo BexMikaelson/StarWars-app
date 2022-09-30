@@ -1,4 +1,6 @@
 import wisdom_yoda from "../assets/images/wisdom_yoda.jpeg";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
@@ -11,6 +13,15 @@ const Home = () => {
         UNIVERSE together.
       </h4>
       <p>-Luke Skywalker</p>
+
+      <Link
+        type="button"
+        to={'/NotFound'}
+        className="btn btn-danger Do-not-push"
+      >
+        <strong>And What Ever You Do Not Push The Red Button</strong>
+        
+      </Link>
 
       <div className="image">
         <img src={wisdom_yoda} alt="yoda" className="img-fluid" />

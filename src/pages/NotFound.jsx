@@ -4,7 +4,7 @@ const NotFound = () => {
     <div>
       <p>
         {" "}
-        <strong>Oh no! Looks like you lost your way.</strong>
+        <strong>Oh no! Looks like you lost your way. I told you NOT to push the button!</strong>
       </p>
 
       <div className="image">
